@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MovaSI | Mobilidade Inteligente</title>
+<meta content="MovaSI: seu movimento gera MovimentAÇÃO. Rotas e informações para uma mobilidade mais acessível." name="description"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/script.js"></script>
+<link href="css/componentes.css" rel="stylesheet"/><script defer="True" src="js/main.js"></script><link href="assets/logo-movasi.png" rel="icon" type="image/png"/></head>
+<body>
+<!-- CABEÇALHO DO MOVASI -->
+<a class="pular-conteudo" href="#conteudo">Ir para o conteúdo principal</a>
+<header class="cabecalho cabecalho-com-nav">
+<a aria-label="MovaSI — Página inicial" class="logo" href="index.html"><img alt="MovaSI — Seu movimento gera MovimentAÇÃO" height="75" src="assets/logo-movasi.png" width="115"/></a>
+<button aria-controls="navegacao-principal" aria-expanded="false" aria-label="Abrir menu de navegação" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Navegação principal" class="menu-principal" id="navegacao-principal"><a aria-current="page" class="ativo" href="index.html">Início</a><a href="painel.html">Mapa</a><a href="alertas.html">Alertas</a><a href="sobre.html">Sobre</a><a href="faq.html">FAQ</a><a href="integrantes.html">Equipe</a><a href="contato.html">Contato</a></nav>
+</header>
+<main class="pagina-inicial" id="conteudo">
+<!-- APRESENTAÇÃO DO MOVASI -->
+<section class="apresentacao">
+<p class="etiqueta">MOBILIDADE INTELIGENTE E INCLUSIVA</p>
+<h1>
+                Seu movimento gera
+                <span>MovimentAÇÃO.</span>
+</h1>
+<p class="subtitulo">
+                A cidade no seu ritmo.
+                Acessibilidade no seu caminho.
+            </p>
+<p class="descricao">
+                Descubra caminhos, planeje seus deslocamentos
+                e compartilhe informações de acessibilidade
+                para ajudar outras pessoas.
+            </p>
+<div class="beneficios">
+<p>✓ Rotas de acordo com sua mobilidade</p>
+<p>✓ Informações sobre obstáculos</p>
+<p>✓ Alertas colaborativos</p>
+<p>✓ Mais autonomia nos deslocamentos</p>
+</div>
+</section>
+<!-- ACESSO AO APLICATIVO -->
+<section class="area-acesso">
+<div class="cartao-acesso">
+<!-- FORMULÁRIO DE LOGIN -->
+<div id="tela-login">
+<h2>Bem-vindo ao MovaSI</h2>
+<p class="texto-apoio">
+                        Entre para começar sua jornada.
+                    </p>
+<form id="form-login">
+<label for="login-email">E-mail</label>
+<input autocomplete="email" id="login-email" name="email" placeholder="seuemail@exemplo.com" required="" type="email"/>
+<label for="login-senha">Senha</label>
+<input autocomplete="current-password" id="login-senha" name="senha" placeholder="Digite sua senha" required="" type="password"/>
+<button class="botao-principal" type="submit">
+                            Entrar na minha conta
+                        </button>
+</form>
+<button class="botao-link" id="esqueci-senha" type="button">
+                        Esqueci minha senha
+                    </button>
+<div class="separador">
+<span>ou continuar com</span>
+</div>
+<div class="login-social">
+<button disabled="" type="button">Google (em breve)</button>
+<button disabled="" type="button">Facebook (em breve)</button>
+<button disabled="" type="button">Apple (em breve)</button>
+</div>
+<p class="alternar-acesso">
+                        Ainda não tem uma conta?
+                        <button class="botao-link" id="abrir-cadastro" type="button">
+                            Criar minha conta
+                        </button>
+</p>
+</div>
+<!-- FORMULÁRIO DE CADASTRO -->
+<div hidden="" id="tela-cadastro">
+<h2>Crie sua conta</h2>
+<p class="texto-apoio">
+                        Seu caminho começa aqui.
+                    </p>
+<form id="form-cadastro">
+<label for="cadastro-nome">Nome completo</label>
+<input autocomplete="name" id="cadastro-nome" name="nome" required="" type="text"/>
+<label for="cadastro-nascimento">Data de nascimento</label>
+<input id="cadastro-nascimento" name="nascimento" required="" type="date"/>
+<label for="cadastro-sexo">Sexo (opcional)</label>
+<select id="cadastro-sexo" name="sexo">
+<option value="">Prefiro não informar</option>
+<option value="feminino">Feminino</option>
+<option value="masculino">Masculino</option>
+<option value="outro">Outro</option>
+</select>
+<label for="cadastro-email">E-mail</label>
+<input autocomplete="email" id="cadastro-email" name="email" required="" type="email"/>
+<label for="cadastro-senha">Crie uma senha</label>
+<input autocomplete="new-password" id="cadastro-senha" minlength="8" name="senha" required="" type="password"/>
+<label for="cadastro-confirmar">Confirme a senha</label>
+<input autocomplete="new-password" id="cadastro-confirmar" minlength="8" name="confirmar-senha" required="" type="password"/>
+<button class="botao-principal" type="submit">
+                            Criar minha conta
+                        </button>
+</form>
+<p class="alternar-acesso">
+                        Já possui uma conta?
+                        <button class="botao-link" id="voltar-login" type="button">
+                            Fazer login
+                        </button>
+</p>
+</div>
+<p aria-live="polite" id="mensagem-sistema" role="status"></p>
+</div>
+</section>
+</main><section aria-labelledby="atalhos-titulo" class="atalhos-inicio">
+<div class="atalhos-topo"><p class="sobretitulo">EXPLORE O PROTÓTIPO</p><h2 id="atalhos-titulo">Acessibilidade começa com informação</h2><p>Conheça as funcionalidades demonstrativas, sem necessidade de criar conta.</p></div>
+<div class="cards-atalho"><a class="card-atalho" href="painel.html"><span aria-hidden="true" class="icone-atalho">⌖</span><h3>Explorar mapa</h3><p>Compare pontos de referência na Avenida Paulista.</p><span class="link-visual">Abrir mapa →</span></a>
+<a class="card-atalho" href="alertas.html"><span aria-hidden="true" class="icone-atalho">!</span><h3>Alertas colaborativos</h3><p>Experimente registrar e filtrar relatos demonstrativos.</p><span class="link-visual">Conhecer alertas →</span></a>
+<a class="card-atalho" href="sobre.html"><span aria-hidden="true" class="icone-atalho">♡</span><h3>Entender a proposta</h3><p>Saiba como o MovaSI prioriza autonomia e evidências.</p><span class="link-visual">Sobre o projeto →</span></a></div>
+</section>
+<footer class="rodape rodape-geral"><p><strong>MovaSI</strong> · Seu movimento gera MovimentAÇÃO.</p><p>Projeto acadêmico FIAP · Global Solution CitizenTech 2026/2 · Turma 1TDSPS</p><p>Protótipo educacional. Dados demonstrativos não confirmam acessibilidade real de ruas ou rotas.</p></footer>
+</body>
+</html>

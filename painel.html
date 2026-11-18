@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MovaSI | Meu Painel</title>
+<!-- BIBLIOTECA DO MAPA -->
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+<!-- ESTILOS DO MOVASI -->
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/painel.css" rel="stylesheet"/>
+<!-- JAVASCRIPT DO MAPA -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+<!-- FUNCIONALIDADES DO PAINEL -->
+<script defer="" src="js/painel.js"></script>
+<link href="css/componentes.css" rel="stylesheet"/><script defer="True" src="js/main.js"></script><link href="assets/logo-movasi.png" rel="icon" type="image/png"/></head>
+<body>
+<!-- CABEÇALHO -->
+<a class="pular-conteudo" href="#conteudo">Ir para o conteúdo principal</a>
+<header class="cabecalho cabecalho-com-nav">
+<a aria-label="MovaSI — Página inicial" class="logo" href="index.html"><img alt="MovaSI — Seu movimento gera MovimentAÇÃO" height="75" src="assets/logo-movasi.png" width="115"/></a>
+<button aria-controls="navegacao-principal" aria-expanded="false" aria-label="Abrir menu de navegação" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Navegação principal" class="menu-principal" id="navegacao-principal"><a href="index.html">Início</a><a aria-current="page" class="ativo" href="painel.html">Mapa</a><a href="alertas.html">Alertas</a><a href="sobre.html">Sobre</a><a href="faq.html">FAQ</a><a href="integrantes.html">Equipe</a><a href="contato.html">Contato</a></nav>
+</header>
+<!-- PÁGINA PRINCIPAL -->
+<main class="painel-pagina" id="conteudo">
+<!-- BOAS-VINDAS -->
+<section class="painel-boas-vindas">
+<p class="painel-etiqueta">
+                MOVASI | MOBILIDADE INTELIGENTE
+            </p>
+<h1>
+                Olá! Para onde vamos?
+            </h1>
+<p>
+                Seu caminho, suas escolhas.
+            </p>
+</section>
+<!-- CONTEÚDO DO PAINEL -->
+<div class="painel-grid">
+<!-- COLUNA DE CONTROLES -->
+<section class="painel-cartao painel-controles">
+<h2>Planeje seu deslocamento</h2>
+<p class="painel-descricao">
+                    Escolha os pontos que deseja
+                    visualizar no mapa.
+                </p>
+<!-- ORIGEM -->
+<label for="origem">
+                    Origem
+                </label>
+<select id="origem">
+<option value="masp">
+                        MASP
+                    </option>
+<option value="trianon">
+                        Parque Trianon
+                    </option>
+<option value="conjunto">
+                        Conjunto Nacional
+                    </option>
+</select>
+<!-- DESTINO -->
+<label for="destino">
+                    Destino
+                </label>
+<select id="destino">
+<option value="conjunto">
+                        Conjunto Nacional
+                    </option>
+<option value="masp">
+                        MASP
+                    </option>
+<option value="trianon">
+                        Parque Trianon
+                    </option>
+</select>
+<!-- PERFIL DE MOBILIDADE -->
+<label for="mobilidade">
+                    Seu tipo de mobilidade
+                </label>
+<select id="mobilidade">
+<option value="manual">
+                        Cadeira de rodas manual
+                    </option>
+<option value="motorizada">
+                        Cadeira de rodas motorizada
+                    </option>
+<option value="reduzida">
+                        Mobilidade reduzida
+                    </option>
+<option value="andador">
+                        Andador ou bengala
+                    </option>
+</select>
+<!-- BOTÃO DO MAPA -->
+<button class="painel-botao" id="ver-pontos" type="button">
+                    Ver pontos no mapa
+                </button>
+<!-- RESULTADO -->
+<div aria-live="polite" class="painel-resultado" id="resultado" role="status">
+                    Selecione a origem e o destino
+                    para visualizar os pontos.
+                </div>
+<!-- ENDEREÇOS FAVORITOS -->
+<div class="painel-secao">
+<h3>Meus lugares</h3>
+<p class="painel-descricao">
+                        Salve destinos para acessar
+                        mais rapidamente.
+                    </p>
+<button class="painel-botao-secundario" id="salvar-favorito" type="button">
+                        Salvar destino nos favoritos
+                    </button>
+<div class="painel-favoritos" id="lista-favoritos"></div>
+<p class="painel-observacao">
+                        Nesta demonstração, os favoritos
+                        ficam salvos somente neste navegador.
+                    </p>
+</div>
+<!-- MOVASI ALERTA -->
+<div class="painel-secao">
+<h3>MovaSI Alerta</h3>
+<p class="painel-descricao">Registre situações de acessibilidade em um protótipo local. Os relatos não são publicados nem verificados.</p>
+<button class="painel-botao-alerta" id="botao-alertas" type="button">Abrir MovaSI Alerta</button>
+</div>
+</section>
+<!-- COLUNA DO MAPA -->
+<section class="painel-cartao painel-mapa">
+<div class="mapa-cabecalho">
+<div>
+<h2>Mapa interativo</h2>
+<p>
+                            Avenida Paulista - São Paulo
+                        </p>
+</div>
+<span class="mapa-identificacao">
+                        OpenStreetMap
+                    </span>
+</div>
+<!-- MAPA REAL -->
+<div aria-label="Mapa demonstrativo com pontos de referência na Avenida Paulista, sem validação de acessibilidade" id="mapa" role="region">
+<p>
+                        Carregando mapa...
+                    </p>
+</div>
+<!-- LEGENDA -->
+<div class="mapa-legenda">
+<span>
+<i class="legenda-origem"></i>
+                        Origem
+                    </span>
+<span>
+<i class="legenda-destino"></i>
+                        Destino
+                    </span>
+<span>
+<i class="legenda-referencia"></i>
+                        Referência
+                    </span>
+</div>
+<!-- AVISO DE ACESSIBILIDADE -->
+<div class="aviso-mapa">
+<strong>
+                        Informação importante
+                    </strong>
+<p>
+                        Os pontos apresentados são
+                        referências geográficas.
+                        Ainda não representam rotas
+                        acessíveis verificadas.
+                    </p>
+<p>
+                        A análise de rampas, calçadas,
+                        obstáculos e tempo estimado
+                        será integrada nas próximas etapas.
+                    </p>
+</div>
+</section>
+</div>
+</main>
+<!-- RODAPÉ -->
+<footer class="rodape rodape-geral"><p><strong>MovaSI</strong> · Seu movimento gera MovimentAÇÃO.</p><p>Projeto acadêmico FIAP · Global Solution CitizenTech 2026/2 · Turma 1TDSPS</p><p>Protótipo educacional. Dados demonstrativos não confirmam acessibilidade real de ruas ou rotas.</p></footer>
+</body>
+</html>

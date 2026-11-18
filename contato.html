@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MovaSI — plataforma acadêmica de mobilidade inclusiva e colaboração comunitária.">
+  <title>Contato | MovaSI</title>
+  <link rel="icon" type="image/png" href="assets/logo-movasi.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  
+  <script src="js/main.js" defer></script>
+<script src="js/contato.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo principal</a>
+    <header class="cabecalho cabecalho-com-nav">
+      <a href="index.html" class="logo" aria-label="MovaSI — Página inicial"><img src="assets/logo-movasi.png" alt="MovaSI — Seu movimento gera MovimentAÇÃO" width="115" height="75"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="navegacao-principal" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu-principal" id="navegacao-principal" aria-label="Navegação principal"><a href="index.html">Início</a><a href="painel.html">Mapa</a><a href="alertas.html">Alertas</a><a href="sobre.html">Sobre</a><a href="faq.html">FAQ</a><a href="integrantes.html">Equipe</a><a href="contato.html" aria-current="page" class="ativo">Contato</a></nav>
+    </header>
+  <main id="conteudo" class="conteudo-interno">
+  <section class="cabecalho-pagina"><p class="sobretitulo">FALE COM A EQUIPE</p><h1>Contato</h1><p class="lead">Conheça como seria o envio de dúvidas e sugestões para a equipe MovaSI. Este formulário é uma simulação acadêmica: nenhuma mensagem é enviada.</p></section>
+<section class="bloco-grid contato-grid"><div class="cartao-conteudo"><h2>Envie uma mensagem demonstrativa</h2><p class="ajuda-campo">Campos marcados com * são obrigatórios.</p>
+<form id="form-contato" class="form-contato" novalidate>
+<div class="grupo-campo"><label for="contato-nome">Nome completo *</label><input id="contato-nome" name="nome" type="text" autocomplete="name" required minlength="3" maxlength="120" placeholder="Seu nome"><p class="erro-campo" id="erro-nome" aria-live="polite"></p></div>
+<div class="grupo-campo"><label for="contato-email">E-mail *</label><input id="contato-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="voce@exemplo.com"><p class="erro-campo" id="erro-email" aria-live="polite"></p></div>
+<div class="grupo-campo"><label for="contato-assunto">Assunto *</label><select id="contato-assunto" name="assunto" required><option value="">Selecione um assunto</option><option value="Duvidas sobre o projeto">Dúvidas sobre o projeto</option><option value="Acessibilidade">Acessibilidade e mobilidade</option><option value="Sugestao">Sugestão para o MovaSI</option><option value="Outro">Outro</option></select><p class="erro-campo" id="erro-assunto" aria-live="polite"></p></div>
+<div class="grupo-campo"><label for="contato-mensagem">Mensagem *</label><textarea id="contato-mensagem" name="mensagem" required minlength="10" maxlength="1200" rows="6" placeholder="Escreva sua dúvida ou sugestão..."></textarea><p class="erro-campo" id="erro-mensagem" aria-live="polite"></p></div>
+<button type="submit" class="botao-destaque botao-formulario">Validar mensagem</button>
+<div id="retorno-contato" class="feedback-formulario" role="status" aria-live="polite" hidden></div>
+</form></div>
+<aside class="cartao-conteudo cartao-lateral"><span class="numero-card">ATENDIMENTO ACADÊMICO</span><h2>Seu retorno pode fazer diferença</h2><p>A melhoria da mobilidade inclusiva depende de ouvir quem enfrenta barreiras no deslocamento diário.</p><div class="detalhe-lateral"><strong>Para conhecer a equipe</strong><p>Consulte os nomes, RMs e informações disponíveis na página de integrantes.</p><a class="link-visual" href="integrantes.html">Conhecer equipe →</a></div><div class="aviso-componente"><strong>Privacidade</strong><p>Este formulário apenas valida dados no navegador. Não há envio, armazenamento, e-mail automático ou integração com servidor.</p></div></aside></section>
+  </main>
+  <footer class="rodape rodape-geral"><p><strong>MovaSI</strong> · Seu movimento gera MovimentAÇÃO.</p><p>Projeto acadêmico FIAP · Global Solution CitizenTech 2026/2 · Turma 1TDSPS</p><p>Protótipo educacional. Dados demonstrativos não confirmam acessibilidade real de ruas ou rotas.</p></footer>
+</body>
+</html>

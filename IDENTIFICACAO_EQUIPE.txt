@@ -1,0 +1,8 @@
+GLOBAL SOLUTION FIAP 2026/2
+Disciplina: Front-End Design Engineering
+Projeto: MovaSI — Seu movimento gera MovimentAÇÃO
+Turma: 1TDSPS
+
+Diane Vinha Arantes — RM 575041
+Gleycianne Arruda de Freitas Silva — RM 575040
+Isabella Fernandes dos Passos Prado — RM 574951

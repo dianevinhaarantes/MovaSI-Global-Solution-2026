@@ -1,0 +1,491 @@
+
+/* =========================================
+   MOVASI - PAINEL PRINCIPAL
+   Seu movimento gera MovimentAÇÃO.
+========================================= */
+
+/* CABEÇALHO */
+
+.voltar-login {
+    color: #19DDF3;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.voltar-login:hover {
+    color: #C8F42A;
+    text-decoration: underline;
+}
+
+/* PÁGINA PRINCIPAL */
+
+.painel-pagina {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 75vh;
+
+    margin: 0 auto;
+    padding: 40px 24px 65px;
+}
+
+/* MENSAGEM DE BOAS-VINDAS */
+
+.painel-boas-vindas {
+    margin-bottom: 30px;
+}
+
+.painel-etiqueta {
+    color: #19DDF3;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 10px;
+}
+
+.painel-boas-vindas h1 {
+    color: #C8F42A;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.painel-boas-vindas > p:last-child {
+    color: #C0CBDE;
+    font-size: 17px;
+}
+
+/* DUAS COLUNAS DO PAINEL */
+
+.painel-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(310px, 370px)
+        minmax(0, 1fr);
+
+    gap: 22px;
+    align-items: start;
+}
+
+/* CARTÕES */
+
+.painel-cartao {
+    min-width: 0;
+
+    background: #151D31;
+    border: 1px solid #43536C;
+    border-radius: 20px;
+
+    padding: 26px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.painel-cartao h2 {
+    color: #F4F8FF;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* TEXTOS */
+
+.painel-descricao {
+    color: #C0CBDE;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* FORMULÁRIO */
+
+.painel-controles label {
+    display: block;
+
+    color: #F4F8FF;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    margin: 16px 0 7px;
+}
+
+.painel-controles select {
+    display: block;
+
+    width: 100%;
+    min-height: 50px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #65748B;
+    border-radius: 10px;
+
+    background: #0B1222;
+    color: #F4F8FF;
+
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.painel-controles select:focus-visible {
+    outline: 3px solid #19DDF3;
+    outline-offset: 2px;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.painel-botao {
+    display: block;
+
+    width: 100%;
+    min-height: 50px;
+
+    padding: 13px 18px;
+    margin-top: 24px;
+
+    background: #C8F42A;
+    color: #08121B;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.painel-botao:hover {
+    background: #19DDF3;
+}
+
+/* RESULTADO DO MAPA */
+
+.painel-resultado {
+    margin-top: 16px;
+    padding: 14px;
+
+    color: #E1EAF5;
+    background: #0B1222;
+
+    border: 1px solid #43536C;
+    border-radius: 10px;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* SEÇÕES INTERNAS */
+
+.painel-secao {
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #43536C;
+}
+
+.painel-secao h3 {
+    color: #19DDF3;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* BOTÃO SECUNDÁRIO */
+
+.painel-botao-secundario {
+    width: 100%;
+    min-height: 46px;
+
+    padding: 12px;
+
+    background: #1C2941;
+    color: #19DDF3;
+
+    border: 1px solid #19DDF3;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.painel-botao-secundario:hover {
+    background: #263C54;
+}
+
+/* LISTA DE FAVORITOS */
+
+.painel-favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+.botao-favorito {
+    min-height: 42px;
+    padding: 9px 12px;
+
+    border: 1px solid #43536C;
+    border-radius: 9px;
+
+    background: #0B1222;
+    color: #F4F8FF;
+
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.botao-favorito:hover {
+    border-color: #C8F42A;
+    color: #C8F42A;
+}
+
+.favoritos-vazio {
+    color: #C0CBDE;
+    font-size: 13px;
+}
+
+.painel-observacao {
+    color: #C0CBDE;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* BOTÃO DE ALERTAS */
+
+.painel-botao-alerta {
+    width: 100%;
+    min-height: 46px;
+
+    padding: 12px;
+
+    background: #F315A6;
+    color: #080B18;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.painel-botao-alerta:hover {
+    background: #FF75CF;
+}
+
+/* CABEÇALHO DO MAPA */
+
+.mapa-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.mapa-cabecalho h2 {
+    margin-bottom: 4px;
+}
+
+.mapa-cabecalho p {
+    color: #C0CBDE;
+    font-size: 13px;
+}
+
+.mapa-identificacao {
+    color: #19DDF3;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ÁREA DO MAPA */
+
+#mapa {
+    width: 100%;
+    height: 530px;
+    min-height: 350px;
+
+    background: #101729;
+
+    border: 2px solid #43536C;
+    border-radius: 14px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+/* ESTILO DOS POPUPS DO LEAFLET */
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background: #151D31;
+    color: #F4F8FF;
+}
+
+.leaflet-popup-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.leaflet-popup-close-button span {
+    color: #C8F42A;
+}
+
+/* LEGENDA */
+
+.mapa-legenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    margin: 18px 0;
+}
+
+.mapa-legenda span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #F4F8FF;
+    font-size: 13px;
+}
+
+.mapa-legenda i {
+    display: inline-block;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+}
+
+.legenda-origem {
+    background: #19DDF3;
+}
+
+.legenda-destino {
+    background: #F315A6;
+}
+
+.legenda-referencia {
+    background: #C8F42A;
+}
+
+/* AVISO ABAIXO DO MAPA */
+
+.aviso-mapa {
+    background: #101729;
+
+    border-left: 4px solid #C8F42A;
+    border-radius: 8px;
+
+    padding: 17px;
+}
+
+.aviso-mapa strong {
+    display: block;
+
+    color: #C8F42A;
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.aviso-mapa p {
+    color: #C0CBDE;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.aviso-mapa p + p {
+    margin-top: 8px;
+}
+
+/* ACESSIBILIDADE */
+
+.painel-botao:focus-visible,
+.painel-botao-secundario:focus-visible,
+.painel-botao-alerta:focus-visible,
+.botao-favorito:focus-visible {
+    outline: 3px solid #19DDF3;
+    outline-offset: 3px;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .painel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-pagina {
+        max-width: 760px;
+    }
+
+    #mapa {
+        height: 450px;
+    }
+
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    .painel-pagina {
+        padding: 25px 15px 45px;
+    }
+
+    .painel-boas-vindas h1 {
+        font-size: 30px;
+    }
+
+    .painel-cartao {
+        padding: 18px;
+    }
+
+    .painel-cartao h2 {
+        font-size: 20px;
+    }
+
+    .mapa-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #mapa {
+        height: 380px;
+        min-height: 300px;
+    }
+
+    .mapa-legenda {
+        gap: 10px;
+    }
+
+}
+
+/* EVITAR ANIMAÇÕES PARA QUEM PREFERE */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}

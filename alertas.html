@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MovaSI — plataforma acadêmica de mobilidade inclusiva e colaboração comunitária.">
+  <title>MovaSI Alerta | MovaSI</title>
+  <link rel="icon" type="image/png" href="assets/logo-movasi.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  
+  <script src="js/main.js" defer></script>
+<script src="js/alertas.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo principal</a>
+    <header class="cabecalho cabecalho-com-nav">
+      <a href="index.html" class="logo" aria-label="MovaSI — Página inicial"><img src="assets/logo-movasi.png" alt="MovaSI — Seu movimento gera MovimentAÇÃO" width="115" height="75"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="navegacao-principal" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu-principal" id="navegacao-principal" aria-label="Navegação principal"><a href="index.html">Início</a><a href="painel.html">Mapa</a><a href="alertas.html" aria-current="page" class="ativo">Alertas</a><a href="sobre.html">Sobre</a><a href="faq.html">FAQ</a><a href="integrantes.html">Equipe</a><a href="contato.html">Contato</a></nav>
+    </header>
+  <main id="conteudo" class="conteudo-interno">
+  <section class="cabecalho-pagina"><p class="sobretitulo">MOBILIDADE COLABORATIVA</p><h1>MovaSI Alerta</h1><p class="lead">Demonstre como a comunidade poderia registrar condições de mobilidade e acompanhar relatos. Nesta versão, nenhum aviso é publicado ou verificado.</p></section>
+<div class="aviso-componente aviso-global"><strong>Protótipo local — não substitui orientações de segurança.</strong><p>Os exemplos e seus próprios relatos ficam apenas neste navegador. Não há integração com prefeitura, base cartográfica, usuários externos ou verificação de obstáculos.</p></div>
+<section class="bloco-grid alertas-grid"><div class="cartao-conteudo"><h2>Registrar relato demonstrativo</h2><form id="form-alerta" novalidate>
+<div class="grupo-campo"><label for="alerta-tipo">Tipo de ocorrência *</label><select id="alerta-tipo" required><option value="">Selecione uma categoria</option><option value="Rampa danificada">Rampa danificada</option><option value="Degrau ou desnível">Degrau ou desnível</option><option value="Calçada irregular">Calçada irregular</option><option value="Obstrução de passagem">Obstrução de passagem</option><option value="Outro obstáculo">Outro obstáculo</option></select><p class="erro-campo" id="erro-tipo"></p></div>
+<div class="grupo-campo"><label for="alerta-local">Local de referência *</label><input id="alerta-local" type="text" minlength="5" maxlength="120" required placeholder="Ex.: próximo ao MASP"><p class="erro-campo" id="erro-local"></p></div>
+<div class="grupo-campo"><label for="alerta-impacto">Impacto percebido *</label><select id="alerta-impacto" required><option value="">Selecione o impacto</option><option value="Baixo">Baixo</option><option value="Moderado">Moderado</option><option value="Alto">Alto</option></select><p class="erro-campo" id="erro-impacto"></p></div>
+<div class="grupo-campo"><label for="alerta-descricao">Descreva a situação *</label><textarea id="alerta-descricao" rows="4" minlength="10" maxlength="500" required placeholder="Descreva a barreira de maneira objetiva."></textarea><p class="erro-campo" id="erro-descricao"></p></div>
+<button type="submit" class="botao-destaque botao-formulario">Registrar nesta demonstração</button><p id="alerta-retorno" class="feedback-formulario" role="status" aria-live="polite" hidden></p></form></div>
+<div class="cartao-conteudo"><div class="cabecalho-lista"><div><span class="numero-card">RELATOS DA DEMONSTRAÇÃO</span><h2>Ocorrências registradas</h2></div><span class="contador" id="total-alertas" aria-live="polite">0</span></div>
+<div class="filtros-alerta" role="group" aria-label="Filtrar relatos"><button class="filtro-ativo" type="button" data-filtro="todos" aria-pressed="true">Todos</button><button type="button" data-filtro="exemplos" aria-pressed="false">Exemplos</button><button type="button" data-filtro="meus" aria-pressed="false">Meus relatos</button></div><div id="lista-alertas" class="lista-alertas" aria-live="polite"></div><p class="ajuda-campo">Os exemplos são fictícios e não descrevem condições reais das ruas.</p><button type="button" id="limpar-alertas" class="botao-texto">Limpar somente meus relatos deste navegador</button></div></section>
+<section class="chamada-final"><h2>Quer visualizar os pontos do piloto?</h2><p>O mapa permite escolher referências geográficas, mas não verifica a acessibilidade real.</p><a class="botao-destaque" href="painel.html">Abrir mapa</a></section>
+  </main>
+  <footer class="rodape rodape-geral"><p><strong>MovaSI</strong> · Seu movimento gera MovimentAÇÃO.</p><p>Projeto acadêmico FIAP · Global Solution CitizenTech 2026/2 · Turma 1TDSPS</p><p>Protótipo educacional. Dados demonstrativos não confirmam acessibilidade real de ruas ou rotas.</p></footer>
+</body>
+</html>

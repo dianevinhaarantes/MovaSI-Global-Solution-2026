@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MovaSI — plataforma acadêmica de mobilidade inclusiva e colaboração comunitária.">
+  <title>Perguntas frequentes | MovaSI</title>
+  <link rel="icon" type="image/png" href="assets/logo-movasi.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  
+  <script src="js/main.js" defer></script>
+<script src="js/faq.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo principal</a>
+    <header class="cabecalho cabecalho-com-nav">
+      <a href="index.html" class="logo" aria-label="MovaSI — Página inicial"><img src="assets/logo-movasi.png" alt="MovaSI — Seu movimento gera MovimentAÇÃO" width="115" height="75"></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="navegacao-principal" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu-principal" id="navegacao-principal" aria-label="Navegação principal"><a href="index.html">Início</a><a href="painel.html">Mapa</a><a href="alertas.html">Alertas</a><a href="sobre.html">Sobre</a><a href="faq.html" aria-current="page" class="ativo">FAQ</a><a href="integrantes.html">Equipe</a><a href="contato.html">Contato</a></nav>
+    </header>
+  <main id="conteudo" class="conteudo-interno">
+  <section class="cabecalho-pagina"><p class="sobretitulo">CENTRAL DE AJUDA</p><h1>Perguntas frequentes</h1><p class="lead">Informações sobre os objetivos, as funcionalidades e os limites do protótipo MovaSI.</p></section>
+<section class="pesquisa-faq"><label for="buscar-faq">Buscar uma pergunta</label><input id="buscar-faq" type="search" placeholder="Ex.: mapa, alerta, cadastro, acessibilidade" autocomplete="off"><p id="contagem-faq" class="ajuda-campo" role="status" aria-live="polite">Exibindo todas as perguntas.</p></section>
+<section class="lista-faq" aria-label="Perguntas e respostas">
+<details class="faq-item"><summary>O MovaSI oferece rotas acessíveis verificadas?</summary><p>Ainda não. O mapa do protótipo exibe pontos de referência, mas não comprova condições reais de acessibilidade, segurança ou tempo de deslocamento.</p></details>
+<details class="faq-item"><summary>O mapa mostra informações em tempo real?</summary><p>Não. A visualização utiliza a biblioteca Leaflet e mapas de OpenStreetMap quando há conexão, mas não recebe dados atualizados de obstáculos ou calçadas em tempo real.</p></details>
+<details class="faq-item"><summary>Como funciona o MovaSI Alerta?</summary><p>Você pode experimentar o registro de relatos de obstáculos. Neste projeto acadêmico, os dados permanecem somente no armazenamento local do navegador e não são enviados para um servidor ou para outros usuários.</p></details>
+<details class="faq-item"><summary>Preciso criar uma conta para explorar o site?</summary><p>Não. O mapa, os alertas, as informações do projeto e as perguntas frequentes podem ser explorados diretamente pelo menu. O formulário de login é apenas uma demonstração de interface.</p></details>
+<details class="faq-item"><summary>O que acontece com o cadastro demonstrativo?</summary><p>Os campos são validados na própria página. Nenhuma conta real é criada e as senhas digitadas não são armazenadas ou transmitidas pelo projeto.</p></details>
+<details class="faq-item"><summary>Como os destinos favoritos são guardados?</summary><p>Os favoritos do painel são salvos localmente neste navegador por meio de localStorage. Eles não são sincronizados entre dispositivos.</p></details>
+<details class="faq-item"><summary>O que significa um trecho sem confirmação?</summary><p>Significa que a aplicação ainda não possui evidência suficiente sobre as características de acessibilidade. Ausência de dados não significa que o trecho é acessível.</p></details>
+<details class="faq-item"><summary>Qual é o público beneficiado pelo projeto?</summary><p>O foco são pessoas com deficiência, usuárias de cadeira de rodas, pessoas com mobilidade reduzida e demais cidadãos que precisam de melhores informações para se deslocar.</p></details>
+<details class="faq-item"><summary>Onde posso conhecer a equipe?</summary><p>Na página Equipe, que identifica as integrantes e seus RMs. Fotografias e links pessoais serão acrescentados depois que forem fornecidos e autorizados pelas próprias integrantes.</p></details>
+</section><p id="faq-vazio" class="mensagem-vazia" hidden>Nenhuma pergunta encontrada. Tente outro termo ou <button type="button" id="limpar-faq" class="botao-texto">limpe a busca</button>.</p>
+<section class="chamada-final"><h2>Ainda tem alguma dúvida?</h2><p>Envie sua mensagem pelo formulário demonstrativo de contato.</p><a class="botao-destaque" href="contato.html">Ir para contato</a></section>
+  </main>
+  <footer class="rodape rodape-geral"><p><strong>MovaSI</strong> · Seu movimento gera MovimentAÇÃO.</p><p>Projeto acadêmico FIAP · Global Solution CitizenTech 2026/2 · Turma 1TDSPS</p><p>Protótipo educacional. Dados demonstrativos não confirmam acessibilidade real de ruas ou rotas.</p></footer>
+</body>
+</html>
