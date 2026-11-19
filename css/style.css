@@ -645,6 +645,25 @@ a:focus-visible {
 }
 
 /* ==========================================
+   MELHORIA DE RESPONSIVIDADE - GLEYCIANNE
+   Celulares com telas intermediarias
+========================================== */
+@media (min-width: 481px) and (max-width: 600px) {
+    .pagina-inicial {
+        padding: 28px 20px;
+        gap: 28px;
+    }
+
+    .apresentacao h1 {
+        font-size: 38px;
+    }
+
+    .cartao-acesso {
+        padding: 28px 24px;
+    }
+}
+
+/* ==========================================
    17. CELULARES
 ========================================== */
 
