@@ -94,7 +94,8 @@ A visualização do mapa depende de conexão externa com Leaflet e OpenStreetMap
 
 ## Repositório GitHub
 
-**INSERIR LINK REAL DO REPOSITÓRIO PÚBLICO QUANDO ELE EXISTIR**
+
+**Repositório oficial do MovaSI:** [MovaSI — Global Solution FIAP 2026/2](https://github.com/dianevinhaarantes/MovaSI-Global-Solution-2026)
 
 O histórico de commits deve representar alterações que realmente aconteceram durante o desenvolvimento, preferencialmente registradas pelas integrantes em suas próprias contas.
 
